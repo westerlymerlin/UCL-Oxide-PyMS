@@ -1058,26 +1058,6 @@ image: &quot;&quot;;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="lblTankPump">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>46</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(235, 235, 235, 0);
-image: &quot;&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Tank Gauge</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
@@ -1232,41 +1212,6 @@ image: &quot;&quot;;</string>
     <property name="geometry">
      <rect>
       <x>1050</x>
-      <y>5</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI</family>
-      <pointsize>14</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-font: 14pt &quot;Segoe UI&quot;;
-image: &quot;&quot;;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::Box</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="text">
-     <string>0.0</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lineScrollPump">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
       <y>5</y>
       <width>121</width>
       <height>41</height>
@@ -1690,61 +1635,6 @@ image: &quot;&quot;;</string>
      </column>
     </widget>
    </widget>
-   <widget class="QLabel" name="lineN2Pressure">
-    <property name="geometry">
-     <rect>
-      <x>1330</x>
-      <y>5</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI</family>
-      <pointsize>14</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-font: 14pt &quot;Segoe UI&quot;;
-image: &quot;&quot;;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::Box</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="text">
-     <string>0.0</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblN2Pump">
-    <property name="geometry">
-     <rect>
-      <x>1330</x>
-      <y>46</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(235, 235, 235, 0);
-image: &quot;&quot;;</string>
-    </property>
-    <property name="text">
-     <string>N2 Gauge</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <zorder>frmImage</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
@@ -1760,14 +1650,12 @@ image: &quot;&quot;;</string>
    <zorder>listCommands</zorder>
    <zorder>lblIonPump</zorder>
    <zorder>lblTurboPump</zorder>
-   <zorder>lblTankPump</zorder>
    <zorder>label_8</zorder>
    <zorder>listBatch</zorder>
    <zorder>linePlanchet</zorder>
    <zorder>lineLocation</zorder>
    <zorder>lineIonPump</zorder>
    <zorder>lineTurboPump</zorder>
-   <zorder>lineScrollPump</zorder>
    <zorder>lineXPosition</zorder>
    <zorder>lineYPosition</zorder>
    <zorder>lblCurrent</zorder>
@@ -1777,8 +1665,6 @@ image: &quot;&quot;;</string>
    <zorder>label_13</zorder>
    <zorder>btnNCCViewer</zorder>
    <zorder>frameResults</zorder>
-   <zorder>lineN2Pressure</zorder>
-   <zorder>lblN2Pump</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

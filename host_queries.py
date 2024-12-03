@@ -50,7 +50,7 @@ def lasergetstatus():
 
 def valvegetstatus():
     """Get valve status"""
-    message = {"item": 'getstatus', "command": True}
+    message = {"item": 'valvestatus', "command": True}
     headers = {"Accept": "application/json", "api-key": settings['hosts']['valvehost-api-key']}
     try:
         resp = requests.post(settings['hosts']['valvehost'], headers=headers, json=message,
@@ -77,12 +77,8 @@ def pressuresread():
         json_message = resp.json()
         settings['vacuum']['turbo']['current'] = float(json_message[0]['pressure'])
         settings['vacuum']['turbo']['units'] = json_message[0]['units']
-        settings['vacuum']['tank']['current'] = float(json_message[1]['pressure'])
-        settings['vacuum']['tank']['units'] = json_message[1]['units']
-        settings['vacuum']['ion']['current'] = float(json_message[2]['pressure'])
-        settings['vacuum']['ion']['units'] = json_message[2]['units']
-        settings['vacuum']['N2']['current'] = float(json_message[3]['pressure'])
-        settings['vacuum']['N2']['units'] = json_message[3]['units']
+        settings['vacuum']['ion']['current'] = float(json_message[1]['pressure'])
+        settings['vacuum']['ion']['units'] = json_message[1]['units']
         alarms['pumphost'] = 0
         return json_message
     except requests.Timeout:
